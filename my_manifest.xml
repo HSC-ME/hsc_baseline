@@ -10,5 +10,5 @@
            sync-j="4" />
   <!-- project：path 本地相对路径，name 远程相对路径，完整路径为 remote.fetch + project.name -->
   <project name="HSC-ME/psychic-meme" path="psychic-meme" />
-  <project name="HSC-ME/supreme-telegram" path="HSC-ME/supreme-telegram" />
+  <project name="HSC-ME/supreme-telegram" path="supreme-telegram" />
 </manifest>
