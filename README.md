@@ -1,6 +1,13 @@
 # hsc_baseline
 
-repo init -u git@github.com:HSC-ME/hsc_baseline.git -b master -m my_manifest.xml --repo-url=https://gerrit-googlesource.lug.ustc.edu.cn/git-repo --no-repo-verify -g default,sourcecode
+## Google repo
 
-repo sync -d -c --force-sync
+To sync all RCAR3HPC SDK repos, use repo tool:
 
+  ```bash
+  mdkir <sdk_directory>
+  cd  <sdk_directory>
+  repo init -u git@github.com:HSC-ME/hsc_baseline.git -b <tag or branch> -m sdk.xml -g common,windows,linux
+  repo sync
+  repo forall -c git lfs pull
+  ```
